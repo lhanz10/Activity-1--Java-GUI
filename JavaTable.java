@@ -45,6 +45,8 @@ public class JavaTable extends javax.swing.JFrame {
         txtInput = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -73,6 +75,7 @@ public class JavaTable extends javax.swing.JFrame {
         txtCode.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(txtCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 190, -1));
 
+        btnAdd.setBackground(new java.awt.Color(0, 102, 102));
         btnAdd.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         btnAdd.setText("ADD");
         btnAdd.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -83,6 +86,7 @@ public class JavaTable extends javax.swing.JFrame {
         });
         getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 134, -1));
 
+        btnUpdate.setBackground(new java.awt.Color(0, 102, 102));
         btnUpdate.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         btnUpdate.setText("UPDATE");
         btnUpdate.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -93,6 +97,7 @@ public class JavaTable extends javax.swing.JFrame {
         });
         getContentPane().add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 134, -1));
 
+        btnExit.setBackground(new java.awt.Color(0, 102, 102));
         btnExit.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         btnExit.setText("EXIT");
         btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -103,6 +108,7 @@ public class JavaTable extends javax.swing.JFrame {
         });
         getContentPane().add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 134, -1));
 
+        btnDelete.setBackground(new java.awt.Color(0, 102, 102));
         btnDelete.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         btnDelete.setText("DELETE");
         btnDelete.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -113,6 +119,7 @@ public class JavaTable extends javax.swing.JFrame {
         });
         getContentPane().add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 134, -1));
 
+        jTable1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTable1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -140,7 +147,7 @@ public class JavaTable extends javax.swing.JFrame {
         getContentPane().add(txtInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 190, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javafinal/N.jpg"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 774, 310));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 300));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -154,6 +161,29 @@ public class JavaTable extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 140, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel6.setText("DENZ PERIPHERAL SYSTEM MENU");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel6)
+                .addContainerGap(37, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 750, 90));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -320,7 +350,9 @@ public class JavaTable extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField txtCode;
